@@ -11,7 +11,8 @@ This repository contains a PyTorch implementation of the Word2Vec model, includi
 - Training on wikipedia text corpus
 - Efficient data processing and batching
 - Visualizations for final word embeddings
-- Support for CPU and GPU (CUDA/MPS) training (I just used CPU but have tagged the sections you can use parallelization)
+- Support for CPU and GPU (CUDA/MPS) training 
+  (I just used CPU but have tagged the sections you can use parallelization)
 
 ## 📋 Requirements
 
@@ -76,7 +77,7 @@ You can modify the hyperparameters in `train.py`:
 - `WINDOW_SIZE`: Context window size
 - `MODEL`: Choose between "vanilla", "sgns", or "cbow"
 
-(I'll add argparse support later, sorry about that).
+(I'll add argparse support later, sorry about that. And I'll add wandb logging too).
 
 ## 💡 Usage Example
 
@@ -94,7 +95,7 @@ word_embedding = model.get_embedding(word_idx)
 
 ## 📈 Results
 
-Include your training results, loss curves, and example word similarities here.
+Training results, loss curves, and example word similarities coming soon.
 
 ## 📚 References
 
