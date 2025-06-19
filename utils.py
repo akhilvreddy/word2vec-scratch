@@ -40,20 +40,31 @@ def generate_training_pairs(tokens, word2idx, window_size=2):
     return pairs
 
 def generate_cbow_pairs(tokens, word2idx, window_size=2):
+    """
+    Generate CBOW training pairs: (context_words, center_word)
+    For CBOW, we predict the center word given its context words.
+    """
     pairs = []
-    for sentence in tokens:
-        for i in range(len(sentence)):
-            center = word2idx.get(sentence[i], None)
-            if center is None:
+    
+    for center_idx in range(len(tokens)):
+        center_word = tokens[center_idx]
+        
+        if center_word not in word2idx:
+            continue
+            
+        context_words = []
+        for offset in range(-window_size, window_size + 1):
+            context_idx = center_idx + offset
+            if offset == 0 or context_idx < 0 or context_idx >= len(tokens):
                 continue
-
-            context = []
-            for j in range(i - window_size, i + window_size + 1):
-                if j != i and 0 <= j < len(sentence):
-                    ctx_word = word2idx.get(sentence[j], None)
-                    if ctx_word is not None:
-                        context.append(ctx_word)
-
-            if len(context) > 0:
-                pairs.append((context, center))
+                
+            context_word = tokens[context_idx]
+            if context_word not in word2idx:
+                continue
+                
+            context_words.append(context_word)
+        
+        if len(context_words) > 0:
+            pairs.append((context_words, center_word))
+    
     return pairs
