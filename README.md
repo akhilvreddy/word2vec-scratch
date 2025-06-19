@@ -11,7 +11,7 @@ This repository contains a PyTorch implementation of the Word2Vec model, includi
 - Training on wikipedia text corpus
 - Efficient data processing and batching
 - Visualizations for final word embeddings
-- Support for CPU and GPU (CUDA/MPS) training 
+- Support for CPU and GPU (CUDA/MPS) training \\
   (I just used CPU but have tagged the sections you can use parallelization)
 
 ## 📋 Requirements
