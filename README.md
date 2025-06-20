@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 word2vec-scratch/
 ├── data/                    # Data directory (created after running load_data.py)
-├── models/                  # Saved model weights
+├── models/                  # Saved model weights (not needed for small epochs imo)
 ├── notebooks/               # Jupyter notebooks for experiments/analysis
 ├── plots/                   # Generated plots and figures
 ├── saved/                   # (Optional) Saved intermediate results
