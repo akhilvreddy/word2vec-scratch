@@ -48,15 +48,28 @@ pip install -r requirements.txt
 ```
 word2vec-scratch/
 ├── data/                    # Data directory (created after running load_data.py)
-├── word2vec/               
-│   ├── word2vec_vanilla.py  # Vanilla Word2Vec implementation
-│   ├── word2vec_sgns.py    # Skip-gram with negative sampling
-│   └── word2vec_cbow.py    # Continuous Bag of Words implementation
+├── models/                  # Saved model weights
+├── notebooks/               # Jupyter notebooks for experiments/analysis
+├── plots/                   # Generated plots and figures
+├── saved/                   # (Optional) Saved intermediate results
+├── train/                   # Training scripts for each model
+│   ├── train_vanilla.py     # Vanilla Word2Vec training
+│   ├── train_sgns.py        # Skip-gram with Negative Sampling training
+│   └── train_cbow.py        # CBOW training
+├── visualization/           # Embedding visualization scripts and docs
+│   ├── README.md
+│   ├── visualize_embeddings_pca.py
+│   └── visualize_embeddings_tsne.py
+├── word2vec/                # Model implementations
+│   ├── word2vec_vanilla.py
+│   ├── word2vec_sgwns.py
+│   └── word2vec_cbow.py
+├── dataset.py               # PyTorch dataset classes for all models
+├── debug_dataloader.py      # Script for debugging dataloaders
+├── load_data.py             # Data preparation script (downloads/cleans corpus)
+├── requirements.txt         # Project dependencies
 ├── utils.py                 # Utility functions for data processing
-├── dataset.py              # PyTorch dataset implementations
-├── train.py                # Training script (for all methods)
-├── load_data.py            # Data preparation script
-└── requirements.txt        # Project dependencies
+└── README.md                # Main project documentation
 ```
 
 ## 🚦 Getting Started
