@@ -9,7 +9,7 @@ This repository contains a PyTorch implementation of the Word2Vec model, includi
   - Skip-gram with Negative Sampling (SGNS)
   - Continuous Bag of Words (CBOW)
 
-> My loss calcualtions for these happen inside the `forward` function for each class instead of the training loop itslef.
+> My loss calcualtions for these happen inside the `forward` function for each class instead of the training loop itself - we get `loss = model(inputs)`.
 
 - Training on wikipedia text corpus
 - Efficient data processing and batching
