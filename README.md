@@ -79,12 +79,13 @@ word2vec-scratch/
 python load_data.py
 ```
 
-2. Train the model:
+2. Train the model (choose the version you want):
 ```bash
-python train.py
+cd train
+python train_vanilla.py
 ```
 
-You can modify the hyperparameters in `train.py`:
+You can modify the hyperparameters in each of the training files:
 - `EMBEDDING_DIM`: Dimension of word embeddings
 - `BATCH_SIZE`: Number of samples per batch
 - `EPOCHS`: Number of training epochs
