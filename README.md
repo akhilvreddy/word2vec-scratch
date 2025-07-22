@@ -67,7 +67,7 @@ model.load_state_dict(torch.load('model.pth'))
 word_embedding = model.get_embedding(word_idx)
 ```
 
-## 📚 References
+## References
 
 - Mikolov, T., et al. (2013). [Efficient Estimation of Word Representations in Vector Space](https://arxiv.org/abs/1301.3781)
 - Mikolov, T., et al. (2013). [Distributed Representations of Words and Phrases and their Compositionality](https://arxiv.org/abs/1310.4546) 
