@@ -1,3 +1,7 @@
+This is the accompanying repository for my [blog post](https://akhilvreddy.com/posts/word2vec-scratch/). Please check out [this notebook](https://github.com/akhilvreddy/word2vec-scratch/blob/main/notebooks/Word2Vec_Insights.ipynb) for the important code.
+
+---
+
 # Word2Vec Implementation from Scratch
 
 This repository contains a PyTorch implementation of the Word2Vec model, including both CBOW (Continuous Bag of Words) and Skip-gram architectures with Negative Sampling. This is the accompanying code for my [blog post](https://www.google.com).
